@@ -8,7 +8,14 @@ def git(*args):
 branches= []
 dirs = list(filter(os.path.isdir, os.listdir()))
 dirs.sort()
+print(dirs)
 for directory in dirs:
-    os.chdir(directory)
-    git("branch")
-    os.chdir("..")
+	if directory == ".git" or directory == "30-seconds-of-code" or directory == "996.ICU":
+		continue
+	"""
+	os.chdir(directory)
+	"""
+	git("restore", "--staged", directory)
+	"""
+	os.chdir("..")'
+	"""

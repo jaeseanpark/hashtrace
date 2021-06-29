@@ -27,7 +27,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
 
 def add_hash(cur, data):
 	""" adds hash into database from given data"""
-	cur.execute("INSERT INTO table4(hash, file, num) VALUES (?, ?, ?)", data)
+	cur.execute("INSERT INTO table5(hash, blkno) VALUES (?, ?)", data)
 
 #make connection to mariadb
 try:
@@ -48,7 +48,7 @@ cur = mydb.cursor()
 bufsize = 4096
 buf = 1024
 count = -1
-storage = '/dev/vg00/data1'
+storage = '/dev/vg00/data2'
 fd1 = os.open(storage, os.O_RDONLY)
 #length for the progress bar
 length = os.lseek(fd1, 0, os.SEEK_END) / 4096
@@ -58,9 +58,7 @@ duplicates = dict()
 with open('/home/jaepark/crawling/morethanonehash.txt', 'r') as f2:
 	for line in f2.readlines():
 		duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0} 
-"""
 printProgressBar(0, length, prefix = 'Progress:', suffix = 'Complete', length = 50)
-"""
 count = -1 
 fd = open(storage,'rb')
 #main loop
@@ -71,6 +69,7 @@ while True:
 		break
 	sha1hash = hashlib.sha1(readbytes)
 	sha1hashed = sha1hash.hexdigest()
+	"""
 	if sha1hashed in duplicates.keys():
 		if duplicates[sha1hashed]['hashcnt'] == 0:
 			duplicates[sha1hashed]['stdbyte'] = readbytes
@@ -89,15 +88,11 @@ while True:
 				print(count, sha1hashed)
 	else:
 	 continue
-"""
-			with open('mydata123.bin', 'wb') as f:
-				f.write(readbytes)
-			break
-		mytuple = (sha1hashed, "a", count)
-		add_hash(cur, mytuple)
-		printProgressBar(count, length, prefix = 'Progress:', suffix = 'Complete', length = 50)
+	"""
+	mytuple = (sha1hashed, count)
+	add_hash(cur, mytuple)
+	printProgressBar(count, length, prefix = 'Progress:', suffix = 'Complete', length = 50)
 mydb.commit()
 cur.close()
 mydb.close()
-"""
 fd.close()
