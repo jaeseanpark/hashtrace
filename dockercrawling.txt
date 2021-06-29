@@ -1,0 +1,6 @@
+mysql
+php
+java
+elasticsearch
+logstash
+kibana
