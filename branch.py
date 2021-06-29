@@ -10,7 +10,7 @@ dirs = list(filter(os.path.isdir, os.listdir()))
 dirs.sort()
 print(dirs)
 for directory in dirs:
-	if directory == ".git" or directory == "30-seconds-of-code" or directory == "996.ICU":
+	if directory == ".git":
 		continue
 	"""
 	os.chdir(directory)

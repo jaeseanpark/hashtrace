@@ -2,12 +2,8 @@ import os
 from tqdm import tqdm
 import hashlib
 import mariadb
+import sys
 
-
-
-def add_hash(cur, data):
-	""" adds hash into database from given data"""
-	cur.execute("INSERT INTO table4(hash, file, num) VALUES (?, ?, ?)", data)
 
 try:
 	mydb = mariadb.connect(
@@ -23,11 +19,12 @@ except mariadb.Error as e:
 cur = mydb.cursor()
 count = -1
 
-with open("walkfile.txt", "r") as f:
+fd = open("walkfile-errlog.txt", "w")
+
+with open("walkfile-windows10.txt", "r") as f:
 	for line in tqdm(f.readlines()):
 		try:
 			with open(line[:-1], 'rb') as f2:
-				"""
 				while True:
 					readbytes = f2.read(4096)
 					if not readbytes:
@@ -38,13 +35,14 @@ with open("walkfile.txt", "r") as f:
 					count += 1
 					sha1hash = hashlib.sha1(readbytes)
 					sha1hashed = sha1hash.hexdigest()
-					mytuple = (sha1hashed, line[:-1], count)
-					cur.execute("INSERT INTO table4(hash, file, num) VALUES (?, ?, ?)", mytuple)
+					mytuple = (sha1hashed, line[4:-1], count)
+					cur.execute("INSERT INTO table6(hash, file, num) VALUES (?, ?, ?)", mytuple)
 					mydb.commit()
-				"""
 		except IOError as error:
-			print(line[:-1])
+			fd.write(line[4:])
+			print(line[4:])
 			continue
 
 cur.close()
 mydb.close()
+fd.close()

@@ -58,7 +58,9 @@ duplicates = dict()
 with open('/home/jaepark/crawling/morethanonehash.txt', 'r') as f2:
 	for line in f2.readlines():
 		duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0} 
+"""
 printProgressBar(0, length, prefix = 'Progress:', suffix = 'Complete', length = 50)
+"""
 count = -1 
 fd = open(storage,'rb')
 #main loop
@@ -69,7 +71,6 @@ while True:
 		break
 	sha1hash = hashlib.sha1(readbytes)
 	sha1hashed = sha1hash.hexdigest()
-	"""
 	if sha1hashed in duplicates.keys():
 		if duplicates[sha1hashed]['hashcnt'] == 0:
 			duplicates[sha1hashed]['stdbyte'] = readbytes
@@ -88,11 +89,12 @@ while True:
 				print(count, sha1hashed)
 	else:
 	 continue
-	"""
+"""
 	mytuple = (sha1hashed, count)
 	add_hash(cur, mytuple)
 	printProgressBar(count, length, prefix = 'Progress:', suffix = 'Complete', length = 50)
 mydb.commit()
 cur.close()
 mydb.close()
+"""
 fd.close()
