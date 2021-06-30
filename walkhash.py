@@ -57,25 +57,23 @@ with open("walkfile-windows10.txt", "r") as f:
 cur.close()
 mydb.close()
 fd.close()
-"""
-print("111")
-try:
-	f2 = shortopen("/mnt/Users/defaultuser0/AppData/Local/Packages/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157")
-	print("!!!Working on!!!")
-	while True:
-		readbytes = f2.read(4096)
-		if not readbytes:
-			break
-		if len(readbytes) < 4096:
-			diff = 4096 - len(readbytes)
-			readbytes = readbytes + (b"\x00" * diff)
-		count += 1
-		sha1hash = hashlib.sha1(readbytes)
-		sha1hashed = sha1hash.hexdigest()
-		print(sha1hashed)
-	f2.close()
-except IOError as error:
-	print("IOerror")
-except Exception as error:
-	print("Timeout")
-"""
+#  print("111")
+#  try:
+#    f2 = shortopen("/mnt/Users/defaultuser0/AppData/Local/Packages/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157")
+#    print("!!!Working on!!!")
+#    while True:
+#      readbytes = f2.read(4096)
+#      if not readbytes:
+#        break
+#      if len(readbytes) < 4096:
+#        diff = 4096 - len(readbytes)
+#        readbytes = readbytes + (b"\x00" * diff)
+#      count += 1
+#      sha1hash = hashlib.sha1(readbytes)
+#      sha1hashed = sha1hash.hexdigest()
+#      print(sha1hashed)
+#    f2.close()
+#  except IOError as error:
+#    print("IOerror")
+#  except Exception as error:
+#    print("Timeout")

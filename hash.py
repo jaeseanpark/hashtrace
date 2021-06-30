@@ -5,6 +5,7 @@ import sys
 from tqdm import tqdm
 
 
+
 #add to mariadb
 def add_hash(cur, data):
 	""" adds hash into database from given data"""
@@ -31,10 +32,10 @@ storage = '/dev/vg00/data2'
 
 
 #read lines from morethanonehash.txt for bit-by-bit comparison
-duplicates = dict()
-with open('/home/jaepark/crawling/morethanonehash.txt', 'r') as f2:
-	for line in f2.readlines():
-		duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0} 
+#  duplicates = dict()
+#  with open('/home/jaepark/crawling/morethanonehash.txt', 'r') as f2:
+#    for line in f2.readlines():
+#      duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0}
 
 
 

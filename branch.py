@@ -12,10 +12,6 @@ print(dirs)
 for directory in dirs:
 	if directory == ".git":
 		continue
-	"""
-	os.chdir(directory)
-	"""
+	#  os.chdir(directory)
 	git("restore", "--staged", directory)
-	"""
-	os.chdir("..")'
-	"""
+	#  os.chdir("..")'
