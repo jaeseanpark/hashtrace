@@ -47,27 +47,27 @@ while True:
 		break
 	sha1hash = hashlib.sha1(readbytes)
 	sha1hashed = sha1hash.hexdigest()
-        #  
-        #  for bit-by-bit comparison : 
-        #
-	#  if sha1hashed in duplicates.keys():
-	#          if duplicates[sha1hashed]['hashcnt'] == 0:
-	#                  duplicates[sha1hashed]['stdbyte'] = readbytes
-	#                  duplicates[sha1hashed]['hashcnt'] += 1
-	#          elif duplicates[sha1hashed]['hashcnt'] == 1:
-	#                  if duplicates[sha1hashed]['stdbyte'] == readbytes:
-	#                          count += 1
-	#                  elif duplicates[sha1hashed]['stdbyte'] != readbytes:
-	#                          print("same hash diffrent value!\n")
-	#                          sys.exit(count, sha1hashed)
-	#          elif duplicates[sha1hashed]['hashcnt'] > 1:
-	#                  if duplicates[sha1hashed]['stdbyte'] == readbytes:
-	#                          count += 1
-	#                  else:
-	#                          print("same hash different val(2)")
-	#                          print(count, sha1hashed)
-	#  else:
-	#   continue
+  #  
+  #  for bit-by-bit comparison : 
+  #
+  #  if sha1hashed in duplicates.keys():
+  #    if duplicates[sha1hashed]['hashcnt'] == 0:
+  #      duplicates[sha1hashed]['stdbyte'] = readbytes
+  #      duplicates[sha1hashed]['hashcnt'] += 1
+  #    elif duplicates[sha1hashed]['hashcnt'] == 1:
+  #      if duplicates[sha1hashed]['stdbyte'] == readbytes:
+  #        count += 1
+  #      elif duplicates[sha1hashed]['stdbyte'] != readbytes:
+  #        print("same hash diffrent value!\n")
+  #        sys.exit(count, sha1hashed)
+  #    elif duplicates[sha1hashed]['hashcnt'] > 1:
+  #      if duplicates[sha1hashed]['stdbyte'] == readbytes:
+  #        count += 1
+  #      else:
+  #        print("same hash different val(2)")
+  #        print(count, sha1hashed)
+  #  else:
+  #    continue
 	mytuple = (sha1hashed, count)
 	add_hash(cur, mytuple)
 mydb.commit()

@@ -1,0 +1,100 @@
+IOError on/Documents and Settings
+IOError on/ProgramData/Application Data
+IOError on/ProgramData/Desktop
+IOError on/ProgramData/Documents
+IOError on/ProgramData/Start Menu
+IOError on/ProgramData/Templates
+IOError on/Users/All Users
+IOError on/Users/Default User
+IOError on/Users/Default/Application Data
+IOError on/Users/Default/Cookies
+IOError on/Users/Default/Local Settings
+IOError on/Users/Default/My Documents
+IOError on/Users/Default/NetHood
+IOError on/Users/Default/PrintHood
+IOError on/Users/Default/Recent
+IOError on/Users/Default/SendTo
+IOError on/Users/Default/Start Menu
+IOError on/Users/Default/Templates
+IOError on/Users/Default/AppData/Local/Application Data
+IOError on/Users/Default/AppData/Local/History
+IOError on/Users/Default/AppData/Local/Temporary Internet Files
+IOError on/Users/Default/AppData/Local/Microsoft/Windows/Temporary Internet Files
+IOError on/Users/Default/Documents/My Music
+IOError on/Users/Default/Documents/My Pictures
+IOError on/Users/Default/Documents/My Videos
+IOError on/Users/defaultuser0/Application Data
+IOError on/Users/defaultuser0/Cookies
+IOError on/Users/defaultuser0/Local Settings
+IOError on/Users/defaultuser0/My Documents
+IOError on/Users/defaultuser0/NetHood
+IOError on/Users/defaultuser0/PrintHood
+IOError on/Users/defaultuser0/Recent
+IOError on/Users/defaultuser0/SendTo
+IOError on/Users/defaultuser0/Start Menu
+IOError on/Users/defaultuser0/Templates
+IOError on/Users/defaultuser0/AppData/Local/Application Data
+IOError on/Users/defaultuser0/AppData/Local/History
+IOError on/Users/defaultuser0/AppData/Local/Temporary Internet Files
+IOError on/Users/defaultuser0/AppData/Local/Microsoft/Windows/Temporary Internet Files
+IOError on/Users/defaultuser0/AppData/Local/Microsoft/Windows/INetCache/Content.IE5
+Timeout on/Users/defaultuser0/AppData/Local/Packages/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Timeout on/Users/defaultuser0/AppData/Local/Packages/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Users/defaultuser0/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Timeout on/Users/defaultuser0/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Users/defaultuser0/AppData/Roaming/Microsoft/SystemCertificates/My/AppContainerUserCertRead
+IOError on/Users/defaultuser0/Documents/My Music
+IOError on/Users/defaultuser0/Documents/My Pictures
+IOError on/Users/defaultuser0/Documents/My Videos
+IOError on/Users/jaese/Application Data
+IOError on/Users/jaese/Cookies
+IOError on/Users/jaese/Local Settings
+IOError on/Users/jaese/My Documents
+IOError on/Users/jaese/NetHood
+IOError on/Users/jaese/PrintHood
+IOError on/Users/jaese/Recent
+IOError on/Users/jaese/SendTo
+IOError on/Users/jaese/Start Menu
+IOError on/Users/jaese/Templates
+IOError on/Users/jaese/AppData/Local/Application Data
+IOError on/Users/jaese/AppData/Local/History
+IOError on/Users/jaese/AppData/Local/Temporary Internet Files
+IOError on/Users/jaese/AppData/Local/Microsoft/Windows/Temporary Internet Files
+IOError on/Users/jaese/AppData/Local/Microsoft/Windows/INetCache/Content.IE5
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/MicrosoftEdge.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/python.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/python3.7.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/python3.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe/python.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe/python3.7.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe/python3.exe
+IOError on/Users/jaese/AppData/Local/Microsoft/WindowsApps/Microsoft.MicrosoftEdge_8wekyb3d8bbwe/MicrosoftEdge.exe
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/FB0D848F74F70BB2EAA93746D24D9749
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.Search_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.Search_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Users/jaese/AppData/Local/Packages/Microsoft.Windows.Search_cw5n1h2txyewy/AC/Microsoft/CryptnetUrlCache/Content/FB0D848F74F70BB2EAA93746D24D9749
+Timeout on/Users/jaese/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Timeout on/Users/jaese/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Users/jaese/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/FB0D848F74F70BB2EAA93746D24D9749
+Timeout on/Users/jaese/AppData/Roaming/Microsoft/SystemCertificates/My/AppContainerUserCertRead
+IOError on/Users/jaese/Documents/My Music
+IOError on/Users/jaese/Documents/My Pictures
+IOError on/Users/jaese/Documents/My Videos
+IOError on/Users/jaese/OneDrive/개인 중요 보관소.lnk
+IOError on/Users/jaese/OneDrive/문서/ACS 공법 자동화에 관한 의견.pptx
+IOError on/Users/jaese/OneDrive/문서/재형의 전자 필기장.url
+IOError on/Users/jaese/OneDrive/문서/카카오톡 받은 파일/도전적인 목표를 정하고 열정적으로 일을 추진했던 경험을 구체적으로 기술해 주십시오.hwp
+IOError on/Users/jaese/OneDrive/바탕 화면/포드 V 페라리 FORD v FERRARI.2019.1080p.KOR.FHDRip.H264.AAC-RTM.mkv
+IOError on/Users/jaese/OneDrive/바탕 화면/포드 V 페라리 FORD v FERRARI.2019.1080p.KOR.FHDRip.H264.AAC-RTM.smi
+IOError on/Users/jaese/OneDrive/사진/스크린샷/2021-03-03.png
+IOError on/Users/jaese/OneDrive/사진/스크린샷/2021-04-26.png
+IOError on/Users/jaese/OneDrive/사진/스크린샷/2021-05-03.png
+IOError on/Users/Public/Documents/My Music
+IOError on/Users/Public/Documents/My Pictures
+IOError on/Users/Public/Documents/My Videos
+Timeout on/Windows/ServiceProfiles/LocalService/AppData/Roaming/Microsoft/SystemCertificates/My/AppContainerUserCertRead
+IOError on/Windows/System32/config/systemprofile/AppData/Local/Microsoft/Windows/INetCache/Content.IE5
+Timeout on/Windows/System32/config/systemprofile/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/77EC63BDA74BD0D0E0426DC8F8008506
+Timeout on/Windows/System32/config/systemprofile/AppData/Roaming/Microsoft/SystemCertificates/My/AppContainerUserCertRead
