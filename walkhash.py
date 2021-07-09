@@ -10,60 +10,59 @@ import requests
 # open with timeout 3seconds
 @timeout(3)
 def shortopen(path):
-	fd = open(path, 'rb')
-	return fd
+  fd = open(path, 'rb')
+  return fd
 
 # connect to mariadb
 try:
-	mydb = mariadb.connect(
-			host="127.0.0.1",
-			user="jaepark",
-			password="sean2090072",
-			database='mydb1'
-	)
+  mydb = mariadb.connect(
+      host="127.0.0.1",
+      user="jaepark",
+      password="sean2090072",
+      database='mydb2'
+  )
 except mariadb.Error as e:
-	print(f"Error connecting to MariaDB Platform: {e}")
-	sys.exit(1)
+  print(f"Error connecting to MariaDB Platform: {e}")
+  sys.exit(1)
 cur = mydb.cursor()
 count = -1
 
 
 #save error logs
-#fd = open("walkfile-errlog.txt", "w")
-
-with open("walkfile-errlog.txt", "r") as f:
+fd = open("walkfile-errlog-ubuntu.txt", "w")
+with open("walkfile-ubuntu.txt", "r") as f:
   for line in tqdm(f.readlines()):
-    if "Timeout" in line:
-      continue
-    line = "/mnt" + line[10:]
-		try:
+    #  if "Timeout" in line:
+    #    continue
+    #  line = "/mnt" + line[10:]
+    try:
       f2 = shortopen(line[:-1])
       while True:
-				readbytes = f2.read(4096)
-				if not readbytes:
-					break
-				if len(readbytes) < 4096:
+        readbytes = f2.read(4096)
+        if not readbytes:
+          break
+        if len(readbytes) < 4096:
           # if readbytes < 4KB then pad them with b'\x00' else, different hashes are produced.
-					diff = 4096 - len(readbytes)
-					readbytes = readbytes + (b"\x00" * diff)
-				count += 1
-				sha1hash = hashlib.sha1(readbytes)
-				sha1hashed = sha1hash.hexdigest()
-				mytuple = (sha1hashed, line[4:-1], count)
+          diff = 4096 - len(readbytes)
+          readbytes = readbytes + (b"\x00" * diff)
+        count += 1
+        sha1hash = hashlib.sha1(readbytes)
+        sha1hashed = sha1hash.hexdigest()
+        mytuple = (sha1hashed, line[4:-1], )
         # insert into mariaDB
-				cur.execute("INSERT INTO table6(hash, file, num) VALUES (?, ?, ?)", mytuple)
+        cur.execute("INSERT INTO ubuntu_file(hash, file, len) VALUES (?, ?, ?)", mytuple)
         # don't forget to commit
-				mydb.commit()
-			f2.close()
-		except IOError as error:
-			#  fd.write("IOError on" + line[4:])
+        mydb.commit()
+      f2.close()
+    except IOError as error:
+      fd.write("IOError on" + line[4:])
       print(error)
       continue
-		except Exception as error:
+    except Exception as error:
       # for catching timeout errors
-			fd.write("Timeout on" + line[4:])
-			print("Timeout on" + line[4:])
-			continue
+      fd.write("Timeout on" + line[4:])
+      print(error)
+      continue
 
 # don't forget to close up
 cur.close()

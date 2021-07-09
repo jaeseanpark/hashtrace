@@ -9,7 +9,7 @@ from printprogress import printProgressBar
 #add to mariadb
 def add_hash(cur, data):
   """ adds hash into database from given data"""
-  cur.executemany("INSERT INTO table1(hash, blkno) VALUES (?, ?)", data)
+  cur.executemany("INSERT INTO windows10_binstall(hash, blkno, state) VALUES (%s, %s, %s) ON DUPLICATE KEY UPDATE hash = VALUES(hash), state = VALUES(state)", data)
 
 #make connection to mariadb
 try:
@@ -27,6 +27,7 @@ cur = mydb.cursor()
 
 #bufsize and the device to be read and whatnot
 bufsize = 4096
+state = 0
 count = -1
 storage = '/dev/vg00/data2'
 fd_forlen = os.open(storage, os.O_RDONLY)
@@ -38,7 +39,7 @@ total = os.lseek(fd_forlen, 0, os.SEEK_END) / 4096
 #    for line in f2.readlines():
 #      duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0}
 
-printProgressBar(0, total, suffix = 'Complete', length = 50)
+printProgressBar(0, total, prefix = '-', suffix = 'Complete', length = 50)
 mydata = []
 fd = open(storage,'rb')
 #main loop
@@ -70,9 +71,9 @@ while True:
   #        print(count, sha1hashed)
   #  else:
   #    continue
-  mytuple = (sha1hashed, count)
+  mytuple = (sha1hashed, count, state)
   mydata.append(mytuple)
-  printProgressBar(count, total, suffix = 'Complete', length = 50)
+  printProgressBar(count, total, prefix = '-', suffix = 'Complete', length = 50)
   if count % 1000000 == 0 and count != 0:
     #bulk insert into table every 1,000,000 data
     add_hash(cur, mydata)
