@@ -8,8 +8,7 @@ from printprogress import printProgressBar
 
 #add to mariadb
 def add_hash(cur, data):
-  """ adds hash into database from given data"""
-  cur.executemany("INSERT INTO windows10_binstall(hash, blkno, state) VALUES (%s, %s, %s) ON DUPLICATE KEY UPDATE hash = VALUES(hash), state = VALUES(state)", data)
+  cur.executemany("INSERT INTO windows_block0(hash, blkno) VALUES (?, ?)", data)
 
 #make connection to mariadb
 try:
@@ -17,7 +16,7 @@ try:
       host="127.0.0.1",
       user="jaepark",
       password="sean2090072",
-      database='mydb2'
+      database='mydb3'
   )
 except mariadb.Error as e:
   print(f"Error connecting to MariaDB Platform: {e}")
@@ -27,7 +26,6 @@ cur = mydb.cursor()
 
 #bufsize and the device to be read and whatnot
 bufsize = 4096
-state = 0
 count = -1
 storage = '/dev/vg00/data2'
 fd_forlen = os.open(storage, os.O_RDONLY)
@@ -71,7 +69,7 @@ while True:
   #        print(count, sha1hashed)
   #  else:
   #    continue
-  mytuple = (sha1hashed, count, state)
+  mytuple = (sha1hashed, count)
   mydata.append(mytuple)
   printProgressBar(count, total, prefix = '-', suffix = 'Complete', length = 50)
   if count % 1000000 == 0 and count != 0:
