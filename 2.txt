@@ -1,12 +1,19 @@
+Reserved GDT blocks:      1015
+  Reserved GDT blocks at 14-1028
   Inode table at 1061-1572 (+1061)
+  Reserved GDT blocks at 32782-33796
   Inode table at 1573-2084 (bg #0 + 1573)
   Inode table at 2085-2596 (bg #0 + 2085)
+  Reserved GDT blocks at 98318-99332
   Inode table at 2597-3108 (bg #0 + 2597)
   Inode table at 3109-3620 (bg #0 + 3109)
+  Reserved GDT blocks at 163854-164868
   Inode table at 3621-4132 (bg #0 + 3621)
   Inode table at 4133-4644 (bg #0 + 4133)
+  Reserved GDT blocks at 229390-230404
   Inode table at 4645-5156 (bg #0 + 4645)
   Inode table at 5157-5668 (bg #0 + 5157)
+  Reserved GDT blocks at 294926-295940
   Inode table at 5669-6180 (bg #0 + 5669)
   Inode table at 6181-6692 (bg #0 + 6181)
   Inode table at 6693-7204 (bg #0 + 6693)
@@ -23,8 +30,10 @@
   Inode table at 527392-527903 (bg #16 + 3104)
   Inode table at 527904-528415 (bg #16 + 3616)
   Inode table at 528416-528927 (bg #16 + 4128)
+  Reserved GDT blocks at 819214-820228
   Inode table at 528928-529439 (bg #16 + 4640)
   Inode table at 529440-529951 (bg #16 + 5152)
+  Reserved GDT blocks at 884750-885764
   Inode table at 529952-530463 (bg #16 + 5664)
   Inode table at 530464-530975 (bg #16 + 6176)
   Inode table at 530976-531487 (bg #16 + 6688)
@@ -47,6 +56,7 @@
   Inode table at 1055776-1056287 (bg #32 + 7200)
   Inode table at 1056288-1056799 (bg #32 + 7712)
   Inode table at 1572896-1573407 (+32)
+  Reserved GDT blocks at 1605646-1606660
   Inode table at 1573408-1573919 (bg #48 + 544)
   Inode table at 1573920-1574431 (bg #48 + 1056)
   Inode table at 1574432-1574943 (bg #48 + 1568)
@@ -79,6 +89,7 @@
   Inode table at 2104352-2104863 (bg #64 + 7200)
   Inode table at 2104864-2105375 (bg #64 + 7712)
   Inode table at 2621472-2621983 (+32)
+  Reserved GDT blocks at 2654222-2655236
   Inode table at 2621984-2622495 (bg #80 + 544)
   Inode table at 2622496-2623007 (bg #80 + 1056)
   Inode table at 2623008-2623519 (bg #80 + 1568)
@@ -123,6 +134,7 @@
   Inode table at 3675168-3675679 (bg #112 + 5152)
   Inode table at 3675680-3676191 (bg #112 + 5664)
   Inode table at 3676192-3676703 (bg #112 + 6176)
+  Reserved GDT blocks at 4096014-4097028
   Inode table at 3676704-3677215 (bg #112 + 6688)
   Inode table at 3677216-3677727 (bg #112 + 7200)
   Inode table at 3677728-3678239 (bg #112 + 7712)
@@ -241,6 +253,7 @@
   Inode table at 7864352-7864863 (+32)
   Inode table at 7864864-7865375 (bg #240 + 544)
   Inode table at 7865376-7865887 (bg #240 + 1056)
+  Reserved GDT blocks at 7962638-7963652
   Inode table at 7865888-7866399 (bg #240 + 1568)
   Inode table at 7866400-7866911 (bg #240 + 2080)
   Inode table at 7866912-7867423 (bg #240 + 2592)
@@ -341,6 +354,7 @@
   Inode table at 11012128-11012639 (bg #336 + 2080)
   Inode table at 11012640-11013151 (bg #336 + 2592)
   Inode table at 11013152-11013663 (bg #336 + 3104)
+  Reserved GDT blocks at 11239438-11240452
   Inode table at 11013664-11014175 (bg #336 + 3616)
   Inode table at 11014176-11014687 (bg #336 + 4128)
   Inode table at 11014688-11015199 (bg #336 + 4640)
@@ -623,6 +637,7 @@
   Inode table at 19930144-19930655 (bg #608 + 7200)
   Inode table at 19930656-19931167 (bg #608 + 7712)
   Inode table at 20447264-20447775 (+32)
+  Reserved GDT blocks at 20480014-20481028
   Inode table at 20447776-20448287 (bg #624 + 544)
   Inode table at 20448288-20448799 (bg #624 + 1056)
   Inode table at 20448800-20449311 (bg #624 + 1568)
@@ -727,6 +742,7 @@
   Inode table at 23596064-23596575 (bg #720 + 3104)
   Inode table at 23596576-23597087 (bg #720 + 3616)
   Inode table at 23597088-23597599 (bg #720 + 4128)
+  Reserved GDT blocks at 23887886-23888900
   Inode table at 23597600-23598111 (bg #720 + 4640)
   Inode table at 23598112-23598623 (bg #720 + 5152)
   Inode table at 23598624-23599135 (bg #720 + 5664)

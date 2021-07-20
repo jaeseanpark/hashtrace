@@ -1,5 +1,5 @@
   Primary superblock at 0, Group descriptors at 1-13
-  Block bitmap at 1029 (+1029), csum 0x80f8085b
+  Block bitmap at 1029 (+1029), csum 0xa6671a65
   Inode bitmap at 1045 (+1045), csum 0xd911e981
   Backup superblock at 32768, Group descriptors at 32769-32781
   Block bitmap at 1030 (bg #0 + 1030), csum 0x37c5b429
@@ -72,90 +72,90 @@
   Inode bitmap at 524319 (bg #16 + 31), csum 0x00000000
   Block bitmap at 1048576 (+0), csum 0x3efa9671
   Inode bitmap at 1048592 (+16), csum 0x00000000
-  Block bitmap at 1048577 (bg #32 + 1), csum 0x84ef5f69
+  Block bitmap at 1048577 (bg #32 + 1), csum 0xce4323d2
   Inode bitmap at 1048593 (bg #32 + 17), csum 0x00000000
-  Block bitmap at 1048578 (bg #32 + 2), csum 0x737b9c48
+  Block bitmap at 1048578 (bg #32 + 2), csum 0xce4323d2
   Inode bitmap at 1048594 (bg #32 + 18), csum 0x00000000
-  Block bitmap at 1048579 (bg #32 + 3), csum 0x737b9c48
+  Block bitmap at 1048579 (bg #32 + 3), csum 0xce4323d2
   Inode bitmap at 1048595 (bg #32 + 19), csum 0x00000000
-  Block bitmap at 1048580 (bg #32 + 4), csum 0x737b9c48
+  Block bitmap at 1048580 (bg #32 + 4), csum 0xce4323d2
   Inode bitmap at 1048596 (bg #32 + 20), csum 0x00000000
-  Block bitmap at 1048581 (bg #32 + 5), csum 0x737b9c48
+  Block bitmap at 1048581 (bg #32 + 5), csum 0xce4323d2
   Inode bitmap at 1048597 (bg #32 + 21), csum 0x00000000
-  Block bitmap at 1048582 (bg #32 + 6), csum 0x737b9c48
+  Block bitmap at 1048582 (bg #32 + 6), csum 0xce4323d2
   Inode bitmap at 1048598 (bg #32 + 22), csum 0x00000000
-  Block bitmap at 1048583 (bg #32 + 7), csum 0x737b9c48
+  Block bitmap at 1048583 (bg #32 + 7), csum 0xce4323d2
   Inode bitmap at 1048599 (bg #32 + 23), csum 0x00000000
-  Block bitmap at 1048584 (bg #32 + 8), csum 0x737b9c48
+  Block bitmap at 1048584 (bg #32 + 8), csum 0xce4323d2
   Inode bitmap at 1048600 (bg #32 + 24), csum 0x00000000
-  Block bitmap at 1048585 (bg #32 + 9), csum 0x737b9c48
+  Block bitmap at 1048585 (bg #32 + 9), csum 0xce4323d2
   Inode bitmap at 1048601 (bg #32 + 25), csum 0x00000000
-  Block bitmap at 1048586 (bg #32 + 10), csum 0x737b9c48
+  Block bitmap at 1048586 (bg #32 + 10), csum 0xce4323d2
   Inode bitmap at 1048602 (bg #32 + 26), csum 0x00000000
-  Block bitmap at 1048587 (bg #32 + 11), csum 0x737b9c48
+  Block bitmap at 1048587 (bg #32 + 11), csum 0x94a19a85
   Inode bitmap at 1048603 (bg #32 + 27), csum 0x00000000
-  Block bitmap at 1048588 (bg #32 + 12), csum 0x737b9c48
+  Block bitmap at 1048588 (bg #32 + 12), csum 0x4dcd3e0c
   Inode bitmap at 1048604 (bg #32 + 28), csum 0x00000000
-  Block bitmap at 1048589 (bg #32 + 13), csum 0x737b9c48
+  Block bitmap at 1048589 (bg #32 + 13), csum 0xce4323d2
   Inode bitmap at 1048605 (bg #32 + 29), csum 0x00000000
-  Block bitmap at 1048590 (bg #32 + 14), csum 0x737b9c48
+  Block bitmap at 1048590 (bg #32 + 14), csum 0xce4323d2
   Inode bitmap at 1048606 (bg #32 + 30), csum 0x00000000
-  Block bitmap at 1048591 (bg #32 + 15), csum 0x737b9c48
+  Block bitmap at 1048591 (bg #32 + 15), csum 0xce4323d2
   Inode bitmap at 1048607 (bg #32 + 31), csum 0x00000000
   Block bitmap at 1572864 (+0), csum 0x3efa9671
   Inode bitmap at 1572880 (+16), csum 0x00000000
   Backup superblock at 1605632, Group descriptors at 1605633-1605645
-  Block bitmap at 1572865 (bg #48 + 1), csum 0xc7efc34e
+  Block bitmap at 1572865 (bg #48 + 1), csum 0x37c5b429
   Inode bitmap at 1572881 (bg #48 + 17), csum 0x00000000
-  Block bitmap at 1572866 (bg #48 + 2), csum 0x737b9c48
+  Block bitmap at 1572866 (bg #48 + 2), csum 0xce4323d2
   Inode bitmap at 1572882 (bg #48 + 18), csum 0x00000000
-  Block bitmap at 1572867 (bg #48 + 3), csum 0x737b9c48
+  Block bitmap at 1572867 (bg #48 + 3), csum 0xce4323d2
   Inode bitmap at 1572883 (bg #48 + 19), csum 0x00000000
-  Block bitmap at 1572868 (bg #48 + 4), csum 0x737b9c48
+  Block bitmap at 1572868 (bg #48 + 4), csum 0xce4323d2
   Inode bitmap at 1572884 (bg #48 + 20), csum 0x00000000
-  Block bitmap at 1572869 (bg #48 + 5), csum 0x737b9c48
+  Block bitmap at 1572869 (bg #48 + 5), csum 0xce4323d2
   Inode bitmap at 1572885 (bg #48 + 21), csum 0x00000000
-  Block bitmap at 1572870 (bg #48 + 6), csum 0x737b9c48
+  Block bitmap at 1572870 (bg #48 + 6), csum 0xce4323d2
   Inode bitmap at 1572886 (bg #48 + 22), csum 0x00000000
-  Block bitmap at 1572871 (bg #48 + 7), csum 0x737b9c48
+  Block bitmap at 1572871 (bg #48 + 7), csum 0xce4323d2
   Inode bitmap at 1572887 (bg #48 + 23), csum 0x00000000
-  Block bitmap at 1572872 (bg #48 + 8), csum 0x737b9c48
+  Block bitmap at 1572872 (bg #48 + 8), csum 0xce4323d2
   Inode bitmap at 1572888 (bg #48 + 24), csum 0x00000000
-  Block bitmap at 1572873 (bg #48 + 9), csum 0x737b9c48
+  Block bitmap at 1572873 (bg #48 + 9), csum 0xce4323d2
   Inode bitmap at 1572889 (bg #48 + 25), csum 0x00000000
-  Block bitmap at 1572874 (bg #48 + 10), csum 0x737b9c48
+  Block bitmap at 1572874 (bg #48 + 10), csum 0xce4323d2
   Inode bitmap at 1572890 (bg #48 + 26), csum 0x00000000
-  Block bitmap at 1572875 (bg #48 + 11), csum 0x737b9c48
+  Block bitmap at 1572875 (bg #48 + 11), csum 0xce4323d2
   Inode bitmap at 1572891 (bg #48 + 27), csum 0x00000000
-  Block bitmap at 1572876 (bg #48 + 12), csum 0x737b9c48
+  Block bitmap at 1572876 (bg #48 + 12), csum 0xce4323d2
   Inode bitmap at 1572892 (bg #48 + 28), csum 0x00000000
-  Block bitmap at 1572877 (bg #48 + 13), csum 0x737b9c48
+  Block bitmap at 1572877 (bg #48 + 13), csum 0xce4323d2
   Inode bitmap at 1572893 (bg #48 + 29), csum 0x00000000
-  Block bitmap at 1572878 (bg #48 + 14), csum 0x737b9c48
+  Block bitmap at 1572878 (bg #48 + 14), csum 0xce4323d2
   Inode bitmap at 1572894 (bg #48 + 30), csum 0x00000000
-  Block bitmap at 1572879 (bg #48 + 15), csum 0x737b9c48
+  Block bitmap at 1572879 (bg #48 + 15), csum 0xce4323d2
   Inode bitmap at 1572895 (bg #48 + 31), csum 0x00000000
   Block bitmap at 2097152 (+0), csum 0x3efa9671
   Inode bitmap at 2097168 (+16), csum 0x00000000
-  Block bitmap at 2097153 (bg #64 + 1), csum 0x737b9c48
+  Block bitmap at 2097153 (bg #64 + 1), csum 0xce4323d2
   Inode bitmap at 2097169 (bg #64 + 17), csum 0x00000000
-  Block bitmap at 2097154 (bg #64 + 2), csum 0x737b9c48
+  Block bitmap at 2097154 (bg #64 + 2), csum 0xce4323d2
   Inode bitmap at 2097170 (bg #64 + 18), csum 0x00000000
-  Block bitmap at 2097155 (bg #64 + 3), csum 0x737b9c48
+  Block bitmap at 2097155 (bg #64 + 3), csum 0xce4323d2
   Inode bitmap at 2097171 (bg #64 + 19), csum 0x00000000
-  Block bitmap at 2097156 (bg #64 + 4), csum 0x737b9c48
+  Block bitmap at 2097156 (bg #64 + 4), csum 0xce4323d2
   Inode bitmap at 2097172 (bg #64 + 20), csum 0x00000000
-  Block bitmap at 2097157 (bg #64 + 5), csum 0x737b9c48
+  Block bitmap at 2097157 (bg #64 + 5), csum 0xce4323d2
   Inode bitmap at 2097173 (bg #64 + 21), csum 0x00000000
-  Block bitmap at 2097158 (bg #64 + 6), csum 0x737b9c48
+  Block bitmap at 2097158 (bg #64 + 6), csum 0xce4323d2
   Inode bitmap at 2097174 (bg #64 + 22), csum 0x00000000
-  Block bitmap at 2097159 (bg #64 + 7), csum 0x737b9c48
+  Block bitmap at 2097159 (bg #64 + 7), csum 0xce4323d2
   Inode bitmap at 2097175 (bg #64 + 23), csum 0x00000000
-  Block bitmap at 2097160 (bg #64 + 8), csum 0x737b9c48
+  Block bitmap at 2097160 (bg #64 + 8), csum 0xce4323d2
   Inode bitmap at 2097176 (bg #64 + 24), csum 0x00000000
-  Block bitmap at 2097161 (bg #64 + 9), csum 0x737b9c48
+  Block bitmap at 2097161 (bg #64 + 9), csum 0xce4323d2
   Inode bitmap at 2097177 (bg #64 + 25), csum 0x00000000
-  Block bitmap at 2097162 (bg #64 + 10), csum 0x737b9c48
+  Block bitmap at 2097162 (bg #64 + 10), csum 0xebd8bb8b
   Inode bitmap at 2097178 (bg #64 + 26), csum 0x00000000
   Block bitmap at 2097163 (bg #64 + 11), csum 0x737b9c48
   Inode bitmap at 2097179 (bg #64 + 27), csum 0x00000000
@@ -330,7 +330,7 @@
   Block bitmap at 4718607 (bg #144 + 15), csum 0x737b9c48
   Inode bitmap at 4718623 (bg #144 + 31), csum 0x00000000
   Block bitmap at 5242880 (+0), csum 0x02916e4e
-  Inode bitmap at 5242896 (+16), csum 0xa974e95a
+  Inode bitmap at 5242896 (+16), csum 0x23688c00
   Block bitmap at 5242881 (bg #160 + 1), csum 0x737b9c48
   Inode bitmap at 5242897 (bg #160 + 17), csum 0x00000000
   Block bitmap at 5242882 (bg #160 + 2), csum 0x737b9c48
@@ -361,7 +361,7 @@
   Inode bitmap at 5242910 (bg #160 + 30), csum 0x00000000
   Block bitmap at 5242895 (bg #160 + 15), csum 0x737b9c48
   Inode bitmap at 5242911 (bg #160 + 31), csum 0x00000000
-  Block bitmap at 5767168 (+0), csum 0x7611858c
+  Block bitmap at 5767168 (+0), csum 0x29ec8f1a
   Inode bitmap at 5767184 (+16), csum 0x7a3e1acf
   Block bitmap at 5767169 (bg #176 + 1), csum 0x737b9c48
   Inode bitmap at 5767185 (bg #176 + 17), csum 0x00000000

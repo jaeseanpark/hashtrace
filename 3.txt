@@ -1,5 +1,5 @@
-Free blocks:              23165548
-  Free blocks: 9314, 9420-9432, 9435-9436, 9441-10047, 10053-10054, 10221-10234, 10236-10238, 10242-10855, 10865-10874, 31811-32767
+Free blocks:              21881049
+  Free blocks: 9442-10047, 10053-10054, 10274-10815, 10848-10855, 10865-10874, 31811-32767
   Free blocks: 64517-65535
   Free blocks: 
   Free blocks: 99333-99839, 99841-100351
@@ -32,48 +32,48 @@ Free blocks:              23165548
   Free blocks: 
   Free blocks: 
   Free blocks: 1079328-1081343
-  Free blocks: 1087440-1114111
-  Free blocks: 1114112-1146879
-  Free blocks: 1146880-1179647
-  Free blocks: 1179648-1212415
-  Free blocks: 1212416-1245183
-  Free blocks: 1245184-1277951
-  Free blocks: 1277952-1310719
-  Free blocks: 1310720-1343487
-  Free blocks: 1343488-1376255
-  Free blocks: 1376256-1409023
-  Free blocks: 1409024-1441791
-  Free blocks: 1441792-1474559
-  Free blocks: 1474560-1507327
-  Free blocks: 1507328-1540095
-  Free blocks: 1540096-1572863
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 1437754-1439743
+  Free blocks: 1443895-1445887
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
   Free blocks: 1603616-1605631
-  Free blocks: 1606661-1638399
-  Free blocks: 1638400-1671167
-  Free blocks: 1671168-1703935
-  Free blocks: 1703936-1736703
-  Free blocks: 1736704-1769471
-  Free blocks: 1769472-1802239
-  Free blocks: 1802240-1835007
-  Free blocks: 1835008-1867775
-  Free blocks: 1867776-1900543
-  Free blocks: 1900544-1933311
-  Free blocks: 1933312-1966079
-  Free blocks: 1966080-1998847
-  Free blocks: 1998848-2031615
-  Free blocks: 2031616-2064383
-  Free blocks: 2064384-2097151
+  Free blocks: 1637381-1638399
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
   Free blocks: 2127904-2129919
-  Free blocks: 2129920-2162687
-  Free blocks: 2162688-2195455
-  Free blocks: 2195456-2228223
-  Free blocks: 2228224-2260991
-  Free blocks: 2260992-2293759
-  Free blocks: 2293760-2326527
-  Free blocks: 2326528-2359295
-  Free blocks: 2359296-2392063
-  Free blocks: 2392064-2424831
-  Free blocks: 2424832-2457599
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 
+  Free blocks: 2443408-2443775, 2443777-2457599
   Free blocks: 2457600-2490367
   Free blocks: 2490368-2523135
   Free blocks: 2523136-2555903
@@ -175,7 +175,7 @@ Free blocks:              23165548
   Free blocks: 5668864-5701631
   Free blocks: 5701632-5734399
   Free blocks: 5734400-5767167
-  Free blocks: 5775392-5776928, 5776930-5777951, 5777960-5778473, 5798955-5799935
+  Free blocks: 5775392-5777951, 5777960-5778473, 5798955-5799935
   Free blocks: 5799936-5832703
   Free blocks: 5832704-5865471
   Free blocks: 5865472-5898239
