@@ -5,11 +5,16 @@ import subprocess
 import time
 import docker
 
+
+
 def git(*args):
     return subprocess.check_call(['git'] + list(args))
 
 def docker(*args):
 	return subprocess.check_call(['docker'] + list(args))
+
+
+
 
 flag = None
 

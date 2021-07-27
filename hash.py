@@ -8,7 +8,7 @@ from printprogress import printProgressBar
 
 #add to mariadb
 def add_hash(cur, data):
-  cur.executemany("INSERT INTO windows_block0(hash, blkno) VALUES (?, ?)", data)
+  cur.executemany("INSERT INTO dockerunpacked(hash, blkno) VALUES (?, ?)", data)
 
 #make connection to mariadb
 try:
@@ -24,10 +24,11 @@ except mariadb.Error as e:
 
 cur = mydb.cursor()
 
+
 #bufsize and the device to be read and whatnot
 bufsize = 4096
 count = -1
-storage = '/dev/vg00/data2'
+storage = '/dev/vg00/data3'
 fd_forlen = os.open(storage, os.O_RDONLY)
 total = os.lseek(fd_forlen, 0, os.SEEK_END) / 4096
 
@@ -46,8 +47,10 @@ while True:
   readbytes = fd.read(bufsize)
   if not readbytes:
     break
-  sha1hash = hashlib.sha1(readbytes)
-  sha1hashed = sha1hash.hexdigest()
+  #  sha1hash = hashlib.sha1(readbytes)
+  #  sha1hashed = sha1hash.hexdigest()
+  if count == 16831442 or count == 16831443:
+    print(readbytes)
   #  
   #  for bit-by-bit comparison : 
   #
@@ -69,19 +72,19 @@ while True:
   #        print(count, sha1hashed)
   #  else:
   #    continue
-  mytuple = (sha1hashed, count)
-  mydata.append(mytuple)
+  #  mytuple = (sha1hashed, count)
+  #  mydata.append(mytuple)
   printProgressBar(count, total, prefix = '-', suffix = 'Complete', length = 50)
-  if count % 1000000 == 0 and count != 0:
-    #bulk insert into table every 1,000,000 data
-    add_hash(cur, mydata)
-    mydb.commit
-    mydata.clear()
-
-if mydata:
-  #insert any remaining data 
-  add_hash(cur, mydata)
-  mydb.commit()
+#    if count % 1000000 == 0 and count != 0:
+#      #bulk insert into table every 1,000,000 data
+#      add_hash(cur, mydata)
+#      mydb.commit
+#      mydata.clear()
+#
+#  if mydata:
+#    #insert any remaining data
+#    add_hash(cur, mydata)
+#    mydb.commit()
 
 cur.close()
 mydb.close()
