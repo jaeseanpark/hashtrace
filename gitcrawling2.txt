@@ -1,0 +1,3 @@
+https://github.com/iluwatar/java-design-patterns
+https://github.com/animate-css/animate.css
+https://github.com/ryanmcdermott/clean-code-javascript

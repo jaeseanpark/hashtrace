@@ -1,41 +1,24 @@
-from bs4 import BeautifulSoup
 import requests
-import os
-import subprocess
+from bs4 import BeautifulSoup
 
-def git(*args):
-    return subprocess.check_call(['git'] + list(args))
 
 #user agent string
-headers = {"User-Agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"}
+headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"}
 
-#10page
-count = 1
-for i in range(1,3):
-	url = ("https://hub.docker.com/search?q=&type=image")
-	res = requests.get(url, headers=headers)
-	#error handling
-	res.raise_for_status()
-	cloneurls = []
-	#parsing
-	soup = BeautifulSoup(res.text, "lxml")
-	#sort "a"class, "list-group-item paginated_item"
-	giturls = soup.find_all("a", attr={"class":"imageSearchResult styles__searchResult___EBKah styles__clickable___2bfia"})
-	test = soup.a
-	print(soup.prettify())
-	print("!!!")
-	"""
-	# https://github.com concatenate
-	with open("gitcrawling.txt", "a", encoding="utf8") as f:
-			for giturl in giturls:
-					cloneurl = "https://github.com" + giturl["href"]
-					#git("clone", cloneurl)
-					f.write(cloneurl)
-					f.write("\n")
-	"""
-	# docker image pull
-	with open("dockercrawling.txt", "a", encoding="utf8") as f:
-		for giturl in giturls:
-			f.write(giturl)
-			f.write("\n")
+url = ("https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Top-100-stars.md")
+res = requests.get(url, headers=headers)
+
+#error handling
+res.raise_for_status()
+
+# parsing
+with open("gitcrawling2.txt", "a", encoding="utf8") as f:
+	soup = BeautifulSoup(res.text, 'html.parser')
+	tds = soup.find_all('td')
+	for td in tds:
+		link = td.find('a')
+		if link:
+			f.write(link["href"])
+			f.write('\n')
+
 

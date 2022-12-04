@@ -8,7 +8,7 @@ from printprogress import printProgressBar
 
 #add to mariadb
 def add_hash(cur, data):
-  cur.executemany("INSERT INTO dockerunpacked(hash, blkno) VALUES (?, ?)", data)
+  cur.executemany("INSERT INTO githash(hash, blkno) VALUES (?, ?)", data)
 
 #make connection to mariadb
 try:
@@ -16,7 +16,7 @@ try:
       host="127.0.0.1",
       user="jaepark",
       password="sean2090072",
-      database='mydb3'
+      database='mydb1'
   )
 except mariadb.Error as e:
   print(f"Error connecting to MariaDB Platform: {e}")
@@ -28,29 +28,32 @@ cur = mydb.cursor()
 #bufsize and the device to be read and whatnot
 bufsize = 4096
 count = -1
-storage = '/dev/vg00/data3'
+storage = '/dev/disk1s7'
 fd_forlen = os.open(storage, os.O_RDONLY)
 total = os.lseek(fd_forlen, 0, os.SEEK_END) / 4096
-
+os.close(fd_forlen)
 #read lines from morethanonehash.txt for bit-by-bit comparison
 #  duplicates = dict()
 #  with open('/home/jaepark/crawling/morethanonehash.txt', 'r') as f2:
 #    for line in f2.readlines():
 #      duplicates[line[:-1]] = {'stdbyte': 0, 'hashcnt': 0}
 
-printProgressBar(0, total, prefix = '-', suffix = 'Complete', length = 50)
+# printProgressBar(0, total, prefix = '-', suffix = 'Complete', length = 50)
 mydata = []
-fd = open(storage,'rb')
+fd = os.open(storage, os.O_RDONLY)
 #main loop
 while True:
   count += 1
-  readbytes = fd.read(bufsize)
+  readbytes = os.read(fd, bufsize)
   if not readbytes:
     break
-  #  sha1hash = hashlib.sha1(readbytes)
-  #  sha1hashed = sha1hash.hexdigest()
-  if count == 16831442 or count == 16831443:
-    print(readbytes)
+  sha1hash = hashlib.sha1(readbytes)
+  sha1hashed = sha1hash.hexdigest()
+  print(sha1hashed)
+  if count == 100:
+    sys.exit()
+  # if count == 16831442 or count == 16831443:
+  #   print(readbytes)
   #  
   #  for bit-by-bit comparison : 
   #
@@ -74,7 +77,7 @@ while True:
   #    continue
   #  mytuple = (sha1hashed, count)
   #  mydata.append(mytuple)
-  printProgressBar(count, total, prefix = '-', suffix = 'Complete', length = 50)
+  # printProgressBar(count, total, prefix = '-', suffix = 'Complete', length = 50)
 #    if count % 1000000 == 0 and count != 0:
 #      #bulk insert into table every 1,000,000 data
 #      add_hash(cur, mydata)
